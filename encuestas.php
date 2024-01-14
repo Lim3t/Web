@@ -1,48 +1,92 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');
-// Parámetros de conexión a la base de datos PostgreSQL
-$host = "localhost";
-$dbname = "proyecto";
-$user = "root";
-$password = "29demayo";
-$puerto = "3306";
+session_start();
 
-try {
-    $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (Exception $e) {
-    echo "Ocurrió un error con la base de datos: " . $e->getMessage();
+if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== true) {
+    header("Location: iniciarsesion.php");
+    exit();
 }
-
-// Conectar a la base de datos
-$conn = new PDO("pgsql:host=$host;dbname=$postgres;user=$user;password=$password");
-
-
-// Obtener datos del formulario
-$satisfaccion = $_POST['satisfaccion'];
-$clima = $_POST['clima'];
-$carga = $_POST['carga'];
-$equilibrio = $_POST['equilibrio'];
-$bienestar = $_POST['bienestar'];
-$reconocimiento = $_POST['reconocimiento'];
-$desarrollo = $_POST['desarrollo'];
-
-
-
-// Preparar y ejecutar la consulta SQL
-$stmt = $conn->prepare("INSERT INTO ENCUESTA (satisfaccion, clima, carga, equilibrio, bienestar, reconocimiento, desarrollo) VALUES (:satisfaccion, :clima, :carga, :equilibtio, :bienestar, :reconocimiento, :desarrollo)");
-$stmt->bindParam(':satisfaccion', $satisfaccion);
-$stmt->bindParam(':clima', $clima);
-$stmt->bindParam(':carga', $carga);
-$stmt->bindParam(':equilibrio', $equilibrio);
-$stmt->bindParam(':reconocimiento', $reconocimiento);
-$stmt->bindParam(':desarrollo', $desarrollo);
-$stmt->execute();
-
-// Cerrar la conexión
-$conn = null;
-
-// Redirigir al usuario o mostrar un mensaje de éxito
-header("Location: index.html");
-exit();
 ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="background-image:url('imagenes/encuestas\ .png');background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Bienestar Corporativo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#"></a>
+                    <a class="nav-link" href="et.html">Ética Corporativo</a>
+                    <a class="nav-link" href="acceso.html">Acceso a Usuarios</a>
+                    <a class="nav-link" href="encuestas.php">Encuestas</a>
+                    <a class="nav-link" href="cerrar_sesion.php">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-4" S style="padding-right: 2rem;">
+            <h4>
+                Encuestas Semanales
+            </h4>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="imagenes/flechas.png" alt="" width="30">
+                </div>
+
+                <div class="col-md-11">
+                    <p>
+                        Medimos métricas para evaluar tu rendimiento y bienestar laboral a través de encuenstas 100% anónimas.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="imagenes/flechas.png" alt="" width="30">
+                </div>
+
+                <div class="col-md-11">
+                    <p>
+                        Otorgamos apoyo de profesionales si es que se evaúa como necesario.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="imagenes/flechas.png" alt="" width="30">
+                </div>
+
+                <div class="col-md-11">
+                    <p>
+                        Queremos promover el bienestar corporativo a través de la propia enseñanza ética.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="imagenes/papel.png" alt="" width="45">
+                </div>
+
+                <div class="col-md-11">
+                    <a href="ge.html">
+                        <h4 style="background-color: rgba(255, 255, 255, 0.5); border-radius: 10px;">
+                            GENERAR ENCUESTA
+                        </h4>
+                    </a>
+                </div>
+
+</body>
+
+</html>

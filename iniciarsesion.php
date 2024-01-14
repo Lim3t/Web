@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="background-image:url('imagenes/acceso.png');background-size: cover;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Bienestar Corporativo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#"></a>
+          <a class="nav-link" href="et.html">Ética Corporativo</a>
+          <a class="nav-link" href="acceso.html">Acceso a Usuarios</a>
+          <a class="nav-link" href="encuestas.php">Encuestas</a>
+          <a class="nav-link" href="cerrar_sesion.php">Cerrar Sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container" style="padding: 3rem;">
+    <form class="row g-3 needs-validation" action="login.php" method="POST" novalidate>
+
+      <div class="col-md-4">
+        <label for="username" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="username" name="username" required>
+          <div class="invalid-feedback">
+            Por favor ingrese un usuario valido.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+        <div class="invalid-feedback">
+          Por favor ingrese una contraseña valida.
+        </div>
+      </div>
+      <div class="col-12" style="justify-items: center;">
+        <a class="nav-link" href="olvidar.html">No recuerdo mi contraseña</a>
+      </div>
+      <div class="col-12" style="justify-items: center;">
+        <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
+      </div>
+    </form>
+
+</html>
