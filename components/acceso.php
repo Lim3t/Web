@@ -60,13 +60,10 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="register" class="hero d-flex align-items-center">
-  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5 test">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5 test">
       <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-xl-4 mb-5 mb-lg-0" style="z-index: 10">
-          <h1
-            class="my-5 display-5 fw-bold ls-tight"
-            style="color: hsl(218, 81%, 95%)"
-          >
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
             The best offer <br />
             <span style="color: hsl(218, 81%, 75%)">for your business</span>
           </h1>
@@ -79,101 +76,103 @@
         </div>
 
         <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
-          <div
-            id="radius-shape-1"
-            class="position-absolute rounded-circle shadow-5-strong"
-          ></div>
-          <div
-            id="radius-shape-2"
-            class="position-absolute shadow-5-strong"
-          ></div>
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
 
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
-              <form action="encuestasBd.php" method="POST">
+              <form action="encuestasBd.php" method="POST" id="formulario">
                 <div class="row">
-                  <div class="col-md-6 mb-4 text-center">
-                    <div class="form-outline">
-                      <input
-                        type="text"
-                        id="validationCustom01"
-                        class="form-control"
-                        name="nombre"
-                        placeholder="Nombre"
-                        required
-                      />
+
+                  <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__nombre">
+                    <label for="name" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" name="nombre" class="form-control formulario__input" id="name"
+                        placeholder="Nombre">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
+                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      alfabeticos.</p>
                   </div>
-                  <div class="col-md-6 mb-4 text-center">
-                    <div class="form-outline">
-                      <input
-                        type="text"
-                        id="validationCustom02"
-                        class="form-control"
-                        name="apellido"
-                        placeholder="Apellido"
-                        required
-                      />
+
+                  <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" name="apellido" class="form-control formulario__input" id="apellido"
+                        placeholder="Apellido">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-outline col-md-6 mb-4 text-center">
-                    <input
-                      type="text"
-                      id="validationCustomUsername"
-                      name="username"
-                      class="form-control"
-                      placeholder="Usuario"
-                      required
-                    />
+                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      alfabeticos.</p>
                   </div>
 
-                  <div class="form-outline col-md-6 mb-4 text-center">
-                    <input
-                      type="email"
-                      id="validationCustomUsername"
-                      name="correo"
-                      class="form-control"
-                      placeholder="Correo"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="form-outline col-md-6 mb-4 text-center">
-                    <input
-                      type="number"
-                      id="validationCustomUsername"
-                      name="edad"
-                      class="form-control"
-                      placeholder="Edad"
-                      required
-                    />
+                  <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__username">
+                    <label for="username" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" name="username" class="form-control formulario__input" id="username"
+                        placeholder="Usuario">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      alfabeticos.</p>
                   </div>
 
-                  <div class="form-outline col-md-6 mb-4 text-center">
-                    <input
-                      type="password"
-                      id="contraseña"
-                      name="contraseña"
-                      class="form-control"
-                      placeholder="Contraseña"
-                    />
+
+                  <div class="col-md-6 form-group mt-3 mt-md-0 form-group formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Email</label>
+                    <div class="formulario__grupo-input">
+                      <input type="email" class="form-control formulario__input" name="correo" id="correo"
+                        placeholder="Email">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Debe rellenar este campo, Debe rellenar con un correo valido.</p>
                   </div>
-                </div>
-                <div class="form-outline col-md mb-4 text-center">
-                  <input
-                    type="text"
-                    id="inputPassword6"
-                    name="departamento"
-                    class="form-control"
-                    placeholder="Departamento"
-                  />
-                <button type="submit" class="btn-primary mb-4">
-                  Registrarse
-                </button>
+
+                  <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__edad">
+                    <label for="edad" class="formulario__label">Edad</label>
+                    <div class="formulario__grupo-input">
+                      <input type="number" name="edad" class="form-control formulario__input" id="edad"
+                        placeholder="Edad">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      numericos.</p>
+                  </div>
+
+                  <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__departamento">
+                    <label for="departamento" class="formulario__label">Departamento</label>
+                    <div class="formulario__grupo-input">
+                      <input type="text" name="departamento" class="form-control formulario__input" id="departamento"
+                        placeholder="Departamento">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      numericos.</p>
+                  </div>
+
+                  <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__contraseña">
+                    <label for="contraseña" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                      <input type="password" name="contraseña" class="form-control formulario__input" id="contraseña"
+                        placeholder="Contraseña">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Debe rellenar este campo, minimo 8 caracteres y maximo 15.</p>
+                  </div>
+
+                  <div class="formulario__mensaje my-4" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"><b> Error:</b> Por favor rellenar el formulario
+                        correctamente.</i>
+                    </p>
+                  </div>
+                  <br>
+
+                  <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button class="formulario__btn mb-4" type="submit" id="submit-btn">Enviar</button>
+                    <div id="loading-icon" style="display:none;">Cargando...</div>
+                    <br>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Correo enviado!</p>
+                  </div>
               </form>
             </div>
           </div>
@@ -274,6 +273,7 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/js/validaciones.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>

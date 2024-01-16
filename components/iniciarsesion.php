@@ -81,17 +81,42 @@
 
           <div class="card bg-glass text-center">
             <div class="card-body px-4 py-5 px-md-5">
-              <form action="login.php" method="POST">
-                <div class="form-outline mb-4 text-center">
-                  <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" />
+              <form action="login.php" method="POST" id="formulario">
+
+                <div class="col-md mb-4 text-center form-group formulario__grupo" id="grupo__username">
+                  <label for="username" class="formulario__label">Usuario</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" name="username" class="form-control formulario__input" id="username"
+                      placeholder="Usuario">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                    alfabeticos.</p>
                 </div>
-                <div class="form-outline mb-4 text-center">
-                  <input type="password" id="password" name="password" class="form-control" placeholder="Contraseña" />
+
+                <div class="col-md mb-4 text-center form-group formulario__grupo" id="grupo__contraseña">
+                  <label for="contraseña" class="formulario__label">Contraseña</label>
+                  <div class="formulario__grupo-input">
+                    <input type="password" name="contraseña" class="form-control formulario__input" id="contraseña"
+                      placeholder="Contraseña">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">Debe rellenar este campo, minimo 8 caracteres y maximo 15.</p>
                 </div>
+
                 <a href="./acceso.php">No tienes cuenta? registrate!</a>
-                <button type="submit" class="btn-primary btn-block mb-4">
-                  Iniciar Sesion
-                </button>
+                <div class="formulario__mensaje my-4" id="formulario__mensaje">
+                  <p><i class="fas fa-exclamation-triangle"><b> Error:</b> Contraseña o usuario incorrecto!.</i>
+                  </p>
+                </div>
+                <br>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar mt-4">
+                  <button class="formulario__btn mb-4" type="submit" id="submit-btn">Enviar</button>
+                  <div id="loading-icon" style="display:none;">Cargando...</div>
+                  <br>
+                  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Sesion Iniciada!</p>
+                </div>
               </form>
             </div>
           </div>
@@ -192,6 +217,7 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/js/validacionesLogin.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
