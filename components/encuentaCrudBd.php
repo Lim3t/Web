@@ -40,8 +40,10 @@ if (isset($_SESSION['usuario_logueado']) && $_SESSION['usuario_logueado'] === tr
 
         if ($stmt->execute()) {
             echo "Usuario registrado con éxito";
+            header("Location: encuentasExitosa.php");
         } else {
             echo "Error al registrar el usuario: " . $stmt->error;
+            header("Location: ./index.php");
         }
 
         $stmt->close();
