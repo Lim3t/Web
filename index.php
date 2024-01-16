@@ -48,7 +48,12 @@
           <li><a href="components/et.php">Ética Corporativa</a></li>
           <li><a href="components/encuestas.php">Encuestas</a></li>
           <li><a href="components/iniciarsesion.php">Iniciar Sesion</a></li>
-          <li><a href="components/cerrar_sesion.php">Cerrar Sesion</a></li>
+          <li class="dropdown"><a href="#"><span>Perfil</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="components/editProfile.php">Mi Perfil</a></li>
+              <li><a href="components/cerrar_sesion.php">Cerrar Sesion</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>

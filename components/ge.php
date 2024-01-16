@@ -57,7 +57,12 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
           <li><a href="./et.php">Ética Corporativa</a></li>
           <li><a href="./encuestas.php">Encuestas</a></li>
           <li><a href="./iniciarsesion.php">Iniciar Sesion</a></li>
-          <li><a href="./cerrar_sesion.php">Cerrar Sesion</a></li>
+          <li class="dropdown"><a href="#"><span>Perfil</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="./editProfile.php">Mi Perfil</a></li>
+              <li><a href="./cerrar_sesion.php">Cerrar Sesion</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <!-- .navbar -->

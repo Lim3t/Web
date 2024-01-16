@@ -50,7 +50,12 @@
           <li><a href="./et.php">Ética Corporativa</a></li>
           <li><a href="./encuestas.php">Encuestas</a></li>
           <li><a href="./iniciarsesion.php">Iniciar Sesion</a></li>
-          <li><a href="./cerrar_sesion.php">Cerrar Sesion</a></li>
+          <li class="dropdown"><a href="#"><span>Perfil</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="./editProfile.php">Mi Perfil</a></li>
+              <li><a href="./cerrar_sesion.php">Cerrar Sesion</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <!-- .navbar -->
@@ -81,7 +86,7 @@
 
           <div class="card bg-glass">
             <div class="card-body px-4 py-5 px-md-5">
-              <form action="encuestasBd.php" method="POST" id="formulario">
+              <form action="registerBd.php" method="POST" id="formulario">
                 <div class="row">
 
                   <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__nombre">
@@ -100,7 +105,7 @@
                     <div class="formulario__grupo-input">
                       <input type="text" name="apellido" class="form-control formulario__input" id="apellido"
                         placeholder="Apellido">
-                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                      <i class="formulario__validacion-estado bi bi-exclamation-diamond"></i>
                     </div>
                     <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
                       alfabeticos.</p>
