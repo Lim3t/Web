@@ -221,8 +221,8 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
               <span>Bienestar Corporativo</span>
             </a>
             <p>
-              Bienvenido/a a nuestra plataforma de encuestas de bienestar 
-              laboral. Crear una cuenta te brinda la oportunidad de participar 
+              Bienvenido/a a nuestra plataforma de encuestas de bienestar
+              laboral. Crear una cuenta te brinda la oportunidad de participar
               en nuestras encuestas diseñadas para evaluar diversos aspectos de
               tu bienestar en el entorno laboral. Al responder a estas preguntas
               de manera honesta, podrás obtener una comprensión más profunda de
@@ -236,23 +236,8 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
             </div>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-              <li>
-                <i class="bi bi-dash"></i> <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <i class="bi bi-dash"></i> <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-          <h4>Nuestros Servicios</h4>
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Nuestros Servicios</h4>
             <ul>
               <li><i class="bi bi-dash"></i> <a href="./et.php">Enseñanza Ética</a></li>
               <li>
@@ -265,13 +250,13 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contáctanos</h4>
-                <p>
-                   Santiago <br />
-                   Chile <br /><br />
-                   <strong>Phone:</strong> +569 3522 0329<br />
-                   <strong>Email:</strong> bienestarcorporativo.cl<br />
-                </p>
+            <h4>Contáctanos</h4>
+            <p>
+              Santiago <br />
+              Chile <br /><br />
+              <strong>Phone:</strong> +569 3522 0329<br />
+              <strong>Email:</strong> bienestarcorporativo.cl<br />
+            </p>
           </div>
         </div>
       </div>

@@ -68,8 +68,8 @@
             <span style="color: hsl(218, 81%, 75%)">una encuesta a la vez</span>
           </h1>
           <p class="mb-4 opacity-70">
-            En nuestra comunidad, nos preocupamos por tu bienestar 
-            y queremos ofrecerte las herramientas necesarias para 
+            En nuestra comunidad, nos preocupamos por tu bienestar
+            y queremos ofrecerte las herramientas necesarias para
             mejorar tu calidad de vida. ¡Crea tu cuenta hoy y comienza
             tu viaje hacia un mayor bienestar laboral!
           </p>
@@ -105,6 +105,7 @@
                 </div>
 
                 <a href="./acceso.php">No tienes cuenta? registrate!</a>
+
                 <div class="formulario__mensaje my-4" id="formulario__mensaje">
                   <p><i class="fas fa-exclamation-triangle"><b> Error:</b> Contraseña o usuario incorrecto!.</i>
                   </p>
@@ -136,12 +137,12 @@
               <span>Bienestar Corporativo</span>
             </a>
             <p>
-              Bienvenido/a a nuestra plataforma de encuestas de bienestar 
-              laboral. Crear una cuenta te brinda la oportunidad de participar 
+              Bienvenido/a a nuestra plataforma de encuestas de bienestar
+              laboral. Crear una cuenta te brinda la oportunidad de participar
               en nuestras encuestas diseñadas para evaluar diversos aspectos de
               tu bienestar en el entorno laboral. Al responder a estas preguntas
               de manera honesta, podrás obtener una comprensión más profunda de
-              tu salud mental y emocional en el trabajo..
+              tu salud mental y emocional en el trabajo.
             </p>
             <div class="social-links d-flex mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -151,23 +152,8 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
-              <li>
-                <i class="bi bi-dash"></i> <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <i class="bi bi-dash"></i> <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-          <h4>Nuestros Servicios</h4>
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Nuestros Servicios</h4>
             <ul>
               <li><i class="bi bi-dash"></i> <a href="./et.php">Enseñanza Ética</a></li>
               <li>
@@ -180,13 +166,13 @@
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contáctanos</h4>
-                <p>
-                   Santiago <br />
-                   Chile <br /><br />
-                   <strong>Phone:</strong> +569 3522 0329<br />
-                   <strong>Email:</strong> bienestarcorporativo.cl<br />
-                </p>
+            <h4>Contáctanos</h4>
+            <p>
+              Santiago <br />
+              Chile <br /><br />
+              <strong>Phone:</strong> +569 3522 0329<br />
+              <strong>Email:</strong> bienestarcorporativo.cl<br />
+            </p>
           </div>
         </div>
       </div>

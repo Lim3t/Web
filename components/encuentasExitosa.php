@@ -33,7 +33,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center fixed-top">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.php" class="logo d-flex align-items-center">
+            <a href="../index.php" class="logo d-flex align-items-center">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="../assets/img/logo.png" alt=""> -->
                 <h1 class="d-flex align-items-center">Bienestar Corporativo</h1>
@@ -75,12 +75,12 @@
                             <span>Bienestar Corporativo</span>
                         </a>
                         <p>
-                        Bienvenido/a a nuestra plataforma de encuestas de bienestar 
-                        laboral. Crear una cuenta te brinda la oportunidad de participar 
-                        en nuestras encuestas diseñadas para evaluar diversos aspectos de
-                        tu bienestar en el entorno laboral. Al responder a estas preguntas
-                        de manera honesta, podrás obtener una comprensión más profunda de
-                        tu salud mental y emocional en el trabajo.
+                            Bienvenido/a a nuestra plataforma de encuestas de bienestar
+                            laboral. Crear una cuenta te brinda la oportunidad de participar
+                            en nuestras encuestas diseñadas para evaluar diversos aspectos de
+                            tu bienestar en el entorno laboral. Al responder a estas preguntas
+                            de manera honesta, podrás obtener una comprensión más profunda de
+                            tu salud mental y emocional en el trabajo.
                         </p>
                         <div class="social-links d-flex mt-3">
                             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -90,46 +90,31 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-6 footer-links">
-                        <h4>Useful Links</h4>
+                    <div class="col-lg-3 col-6 footer-links">
+                        <h4>Nuestros Servicios</h4>
                         <ul>
-                            <li><i class="bi bi-dash"></i> <a href="#">Home</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">About us</a></li>
-                            <li><i class="bi bi-dash"></i> <a href="#">Services</a></li>
+                            <li><i class="bi bi-dash"></i> <a href="./et.php">Enseñanza Ética</a></li>
                             <li>
-                                <i class="bi bi-dash"></i> <a href="#">Terms of service</a>
+                                <i class="bi bi-dash"></i> <a href="./encuestas.php">Encuestas</a>
                             </li>
                             <li>
-                                <i class="bi bi-dash"></i> <a href="#">Privacy policy</a>
+                                <i class="bi bi-dash"></i> <a href="./index.php">Profesionales Capacitados</a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-2 col-6 footer-links">
-                    <h4>Nuestros Servicios</h4>
-            <ul>
-                    <li><i class="bi bi-dash"></i> <a href="./et.php">Enseñanza Ética</a></li>
-                    <li>
-                    <i class="bi bi-dash"></i> <a href="./encuestas.php">Encuestas</a>
-                    </li>
-                    <li>
-                <i class="bi bi-dash"></i> <a href="./index.php">Profesionales Capacitados</a>
-              </li>
-            </ul>
-          </div>
-
                     <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h4>Contáctanos</h4>
-                <p>
-                   Santiago <br />
-                   Chile <br /><br />
-                   <strong>Phone:</strong> +569 3522 0329<br />
-                   <strong>Email:</strong> bienestarcorporativo.cl<br />
-                </p>
-          </div>
+                        <h4>Contáctanos</h4>
+                        <p>
+                            Santiago <br />
+                            Chile <br /><br />
+                            <strong>Phone:</strong> +569 3522 0329<br />
+                            <strong>Email:</strong> bienestarcorporativo.cl<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
         <div class="footer-legal">
             <div class="container">
