@@ -44,7 +44,7 @@
       <div
         class="container-fluid container-xl d-flex align-items-center justify-content-between"
       >
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.php" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1 class="d-flex align-items-center">Bienestar Corporativo</h1>
@@ -55,8 +55,8 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="./index.html" class="active">Inicio</a></li>
-            <li><a href="components/et.html">Ética Corporativa</a></li>
+            <li><a href="./index.php" class="active">Inicio</a></li>
+            <li><a href="components/et.php">Ética Corporativa</a></li>
             <li><a href="components/encuestas.php">Encuestas</a></li>
             <li><a href="components/iniciarsesion.php">Iniciar Sesion</a></li>
             <li><a href="components/cerrar_sesion.php">Cerrar Sesion</a></li>
@@ -78,7 +78,7 @@
               </p>
             </blockquote>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="components/PC.html" class="btn-get-started"
+              <a href="components/PC.php" class="btn-get-started"
                 >Equipo de profesionales</a
               >
             </div>
@@ -94,7 +94,7 @@
         <div class="container">
           <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-info">
-              <a href="index.html" class="logo d-flex align-items-center">
+              <a href="index.php" class="logo d-flex align-items-center">
                 <span>Nova</span>
               </a>
               <p>
