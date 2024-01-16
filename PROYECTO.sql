@@ -19,6 +19,32 @@
 CREATE DATABASE IF NOT EXISTS `proyecto_universidad` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 USE `proyecto_universidad`;
 
+-- Volcando estructura para tabla proyecto_universidad.encuesta_usuario
+CREATE TABLE IF NOT EXISTS `encuesta_usuario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario_id` int(11) NOT NULL,
+  `cansancio` varchar(255) DEFAULT NULL,
+  `exhausto` varchar(255) DEFAULT NULL,
+  `fatigado` varchar(255) DEFAULT NULL,
+  `desgaste` varchar(255) DEFAULT NULL,
+  `limites` varchar(255) DEFAULT NULL,
+  `trabajo_casa` varchar(255) DEFAULT NULL,
+  `dificultades_sueno` varchar(255) DEFAULT NULL,
+  `sobrecarga` varchar(255) DEFAULT NULL,
+  `desconectar` varchar(255) DEFAULT NULL,
+  `frustracion` varchar(255) DEFAULT NULL,
+  `tareas_desacuerdo` varchar(255) DEFAULT NULL,
+  `conflictos_tareas` varchar(255) DEFAULT NULL,
+  `falta_apoyo` varchar(255) DEFAULT NULL,
+  `emociones_negativas` varchar(255) DEFAULT NULL,
+  `delegar` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `usuario_id` (`usuario_id`),
+  CONSTRAINT `encuesta_usuario_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- La exportación de datos fue deseleccionada.
+
 -- Volcando estructura para tabla proyecto_universidad.usuarios
 CREATE TABLE IF NOT EXISTS `usuarios` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -32,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `correo` (`correo`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- La exportación de datos fue deseleccionada.
 
