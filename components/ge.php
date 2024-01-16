@@ -116,7 +116,6 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
           <select id="trabajo_casa" name="trabajo_casa" class="form-select">
             <option value="si">Sí</option>
 
-            php Copy code
             <option value="no">No</option>
           </select>
         </div>
@@ -179,7 +178,7 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
           </select>
         </div>
 
-        php Copy code
+
         <div class="mb-3">
           <label for="emociones_negativas" class="form-label">¿Experimentas emociones negativas (ansiedad, enojo,
             tristeza,
@@ -219,12 +218,15 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.php" class="logo d-flex align-items-center">
-              <span>Nova</span>
+              <span>Bienestar Corporativo</span>
             </a>
             <p>
-              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-              nada terra videa magna derita valies darta donna mare fermentum
-              iaculis eu non diam phasellus.
+              Bienvenido/a a nuestra plataforma de encuestas de bienestar 
+              laboral. Crear una cuenta te brinda la oportunidad de participar 
+              en nuestras encuestas diseñadas para evaluar diversos aspectos de
+              tu bienestar en el entorno laboral. Al responder a estas preguntas
+              de manera honesta, podrás obtener una comprensión más profunda de
+              tu salud mental y emocional en el trabajo.
             </p>
             <div class="social-links d-flex mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -250,31 +252,26 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
+          <h4>Nuestros Servicios</h4>
             <ul>
-              <li><i class="bi bi-dash"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-dash"></i> <a href="./et.php">Enseñanza Ética</a></li>
               <li>
-                <i class="bi bi-dash"></i> <a href="#">Web Development</a>
+                <i class="bi bi-dash"></i> <a href="./encuestas.php">Encuestas</a>
               </li>
               <li>
-                <i class="bi bi-dash"></i> <a href="#">Product Management</a>
-              </li>
-              <li><i class="bi bi-dash"></i> <a href="#">Marketing</a></li>
-              <li>
-                <i class="bi bi-dash"></i> <a href="#">Graphic Design</a>
+                <i class="bi bi-dash"></i> <a href="./index.php">Profesionales Capacitados</a>
               </li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br />
-              New York, NY 535022<br />
-              United States <br /><br />
-              <strong>Phone:</strong> +1 5589 55488 55<br />
-              <strong>Email:</strong> info@example.com<br />
-            </p>
+          <h4>Contáctanos</h4>
+                <p>
+                   Santiago <br />
+                   Chile <br /><br />
+                   <strong>Phone:</strong> +569 3522 0329<br />
+                   <strong>Email:</strong> bienestarcorporativo.cl<br />
+                </p>
           </div>
         </div>
       </div>
@@ -285,7 +282,7 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
         <div class="copyright">
           &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
         </div>
-        <div class="credits">Designed by <a href="">MartiPlanella</a></div>
+        <div class="credits">Designed by <a href="">Martina Planella</a></div>
       </div>
     </div>
   </footer>
