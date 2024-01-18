@@ -659,6 +659,10 @@ h3 {
   font-family: var(--font-secondary);
 }
 
+.hero p {
+  color: #ffffff;
+}
+
 .hero blockquote {
   color: #fff;
   padding-left: 20px;

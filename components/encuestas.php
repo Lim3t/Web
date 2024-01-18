@@ -35,7 +35,6 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
     <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="../assets/css/main.css" rel="stylesheet" />
-    <link href="../assets/css/styles.css" rel="stylesheet" />
 </head>
 
 <body class="page-index">
