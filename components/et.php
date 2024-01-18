@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon" />
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="../assets/img/favicon.png" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -97,15 +97,12 @@
             <h4 class="custom-title">
               ¿Qué Involucra el Bienestar Laboral a Nivel Ético?
             </h4>
-            <div class="custom-list-row row align-items-center">
+            <div class="row align-items-center custom-list-row">
               <div class="col-md-1 custom-list-icon">
                 <img src="../assets/img/check.png" alt="" width="30" />
               </div>
               <div class="col-md-11">
-                <p>
-                  Promover una cultura de transparencia en todas las
-                  operaciones y decisiones
-                </p>
+                <p>Promover una cultura de transparencia en todas las operaciones y decisiones.</p>
               </div>
             </div>
             <div class="custom-list-row row align-items-center">
@@ -278,7 +275,7 @@
                 <i class="bi bi-dash"></i> <a href="./encuestas.php">Encuestas</a>
               </li>
               <li>
-                <i class="bi bi-dash"></i> <a href="./index.php">Profesionales Capacitados</a>
+                <i class="bi bi-dash"></i> <a href="./pc.php">Profesionales Capacitados</a>
               </li>
             </ul>
           </div>
@@ -299,7 +296,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Martina Planella</span></strong>. All Rights Reserved
         </div>
         <div class="credits">Designed by <a href="">Martina Planella</a></div>
       </div>

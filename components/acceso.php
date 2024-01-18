@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon" />
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="../assets/img/favicon.png" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,8 +96,8 @@
                         placeholder="Nombre">
                       <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
-                      alfabeticos.</p>
+                    <h1 class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      alfabeticos.</h1>
                   </div>
 
                   <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__apellido">
@@ -105,10 +105,10 @@
                     <div class="formulario__grupo-input">
                       <input type="text" name="apellido" class="form-control formulario__input" id="apellido"
                         placeholder="Apellido">
-                      <i class="formulario__validacion-estado bi bi-exclamation-diamond"></i>
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
-                      alfabeticos.</p>
+                    <h1 class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      alfabeticos.</h1>
                   </div>
 
                   <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__username">
@@ -118,8 +118,8 @@
                         placeholder="Usuario">
                       <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
-                      alfabeticos.</p>
+                    <h1 class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      alfabeticos.</h1>
                   </div>
 
 
@@ -130,7 +130,8 @@
                         placeholder="Email">
                       <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">Debe rellenar este campo, Debe rellenar con un correo valido.</p>
+                    <h1 class="formulario__input-error">Debe rellenar este campo, Debe rellenar con un correo valido.
+                    </h1>
                   </div>
 
                   <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__edad">
@@ -140,8 +141,8 @@
                         placeholder="Edad">
                       <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
-                      numericos.</p>
+                    <h1 class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      numericos.</h1>
                   </div>
 
                   <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__departamento">
@@ -151,8 +152,8 @@
                         placeholder="Departamento">
                       <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
-                      numericos.</p>
+                    <h1 class="formulario__input-error">Debe rellenar este campo, Solo puede tener caracteres
+                      numericos.</h1>
                   </div>
 
                   <div class="col-md-6 mb-4 text-center form-group formulario__grupo" id="grupo__contraseña">
@@ -162,7 +163,7 @@
                         placeholder="Contraseña">
                       <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">Debe rellenar este campo, minimo 8 caracteres y maximo 15.</p>
+                    <h1 class="formulario__input-error">Debe rellenar este campo, minimo 8 caracteres y maximo 15.</h1>
                   </div>
 
                   <div class="formulario__mensaje my-4" id="formulario__mensaje">
@@ -176,7 +177,7 @@
                     <button class="formulario__btn mb-4" type="submit" id="submit-btn">Enviar</button>
                     <div id="loading-icon" style="display:none;">Cargando...</div>
                     <br>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Correo enviado!</p>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Usuario Registrado!</p>
                   </div>
               </form>
             </div>
@@ -220,7 +221,7 @@
                 <i class="bi bi-dash"></i> <a href="./encuestas.php">Encuestas</a>
               </li>
               <li>
-                <i class="bi bi-dash"></i> <a href="./index.php">Profesionales Capacitados</a>
+                <i class="bi bi-dash"></i> <a href="./pc.php">Profesionales Capacitados</a>
               </li>
             </ul>
           </div>
@@ -241,7 +242,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Martina Planella</span></strong>. All Rights Reserved
         </div>
         <div class="credits">Designed by <a href="">Martina Planella</a></div>
       </div>
@@ -261,6 +262,7 @@
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <script src="../assets/js/validaciones.js"></script>
 
   <!-- Template Main JS File -->

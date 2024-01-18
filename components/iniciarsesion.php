@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon" />
-  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="../assets/img/favicon.png" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -109,7 +109,13 @@
                   <p class="formulario__input-error">Debe rellenar este campo, minimo 8 caracteres y maximo 15.</p>
                 </div>
 
-                <a href="./acceso.php">No tienes cuenta? registrate!</a>
+                <div class="col-md mb-2">
+                  <a href="./acceso.php">No tienes cuenta? registrate!</a>
+                </div>
+                <div class="col-md">
+                  <a href="./recoveryPassword.php">Olvide mi contraseña</a>
+                </div>
+
 
                 <div class="formulario__mensaje my-4" id="formulario__mensaje">
                   <p><i class="fas fa-exclamation-triangle"><b> Error:</b> Contraseña o usuario incorrecto!.</i>
@@ -117,7 +123,7 @@
                 </div>
                 <br>
 
-                <div class="formulario__grupo formulario__grupo-btn-enviar mt-4">
+                <div class="formulario__grupo formulario__grupo-btn-enviar mt-2">
                   <button class="formulario__btn mb-4" type="submit" id="submit-btn">Enviar</button>
                   <div id="loading-icon" style="display:none;">Cargando...</div>
                   <br>
@@ -165,7 +171,7 @@
                 <i class="bi bi-dash"></i> <a href="./encuestas.php">Encuestas</a>
               </li>
               <li>
-                <i class="bi bi-dash"></i> <a href="./index.php">Profesionales Capacitados</a>
+                <i class="bi bi-dash"></i> <a href="./pc.php">Profesionales Capacitados</a>
               </li>
             </ul>
           </div>
@@ -186,7 +192,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Martina Planella</span></strong>. All Rights Reserved
         </div>
         <div class="credits">Designed by <a href="">Martina Planella</a></div>
       </div>

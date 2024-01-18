@@ -106,7 +106,7 @@ formulario.addEventListener("submit", (e) => {
     };
 
     // Realizando la petición al servidor
-    fetch("components/encuestaBd.php", configFetch)
+    fetch("components/registerBd.php", configFetch)
       .then((response) => response.text())
       .then((data) => {
         console.log(data); // Muestra la respuesta del servidor en la consola

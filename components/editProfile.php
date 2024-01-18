@@ -19,7 +19,7 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
 
     <!-- Favicons -->
     <link href="../assets/img/favicon.png" rel="icon" />
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../assets/img/favicon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -249,7 +249,7 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
                                 <i class="bi bi-dash"></i> <a href="./encuestas.php">Encuestas</a>
                             </li>
                             <li>
-                                <i class="bi bi-dash"></i> <a href="./index.php">Profesionales Capacitados</a>
+                                <i class="bi bi-dash"></i> <a href="./pc.php">Profesionales Capacitados</a>
                             </li>
                         </ul>
                     </div>
@@ -270,7 +270,7 @@ if (!isset($_SESSION['usuario_logueado']) || $_SESSION['usuario_logueado'] !== t
         <div class="footer-legal">
             <div class="container">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Nova</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Martina Planella</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">Designed by <a href="">Martina Planella</a></div>
             </div>
